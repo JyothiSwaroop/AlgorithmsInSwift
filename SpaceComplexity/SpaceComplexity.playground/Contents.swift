@@ -2,8 +2,14 @@ import UIKit
 
 var str = "Hello, playground"
 
-print(Int.min)
-
+// Function will create a sorted copy of the array and print the array
+func printSorted1(_ array: [Int]) {
+    let sorted = array.sorted()
+    for element in sorted {
+        print(element)
+    }
+}
+printSorted1([111, 32, 6, 60, 68, 81, 9, 15, 45])
 
 func poo(_ value: Int, _ currentValue: Int, _ currentCount: inout Int) {
     if value == currentValue {
